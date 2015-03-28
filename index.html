@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Untitled 40</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style>
+body {
+	counter-reset:row;
+}
+.row {
+	counter-reset:col;
+	position:relative;
+	counter-increment:row;
+}
+.row:before {
+ content:counter(row);
+ position:absolute;
+ margin-right:-25px;	
+}
+.container {
+	margin-top:50px;
+	margin-bottom:50px;
+	max-width:900px;
+}
+li {
+	color:#ccc;
+	list-style:none;
+}
+.col-lg-2,.col-lg-9 {
+	padding-top:50px;
+	padding-bottom:50px;
+	direction:ltr;
+	text-align:center;
+	text-shadow:1px 1px 0px rgba(0, 0, 0, .5),-1px -1px 0px rgba(255, 255, 255, .4);
+	border-radius:6%;
+	counter-increment:col;
+	position:relative;
+	border:4px #eee solid;
+	box-shadow:1px 1px 3px 1px rgba(0, 0, 0, .4);
+}
+.col-lg-2 div {
+	cursor:text;
+}
+.col-lg-2:before {
+ content:counter(col);
+ position:absolute;
+ margin-top:-25px;	
+} 
+.col-lg-2:active {
+	box-shadow:inset -1px 3px 5px rgba(0, 0, 0, .4);
+}
+.col-lg-9 {
+	background-color:#D367C3;
+	color:#5bef4b;
+}
+</style>
+<script src="js/jscolor.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+<ul class="row" id="0">
+<li class="col-lg-3">
+<label class="show" for="co">bg set</label>
+<input class="color" value="d367c3" id="co" autofocus="autofocus">
+<label class="show" for="co2">color set</label>
+<input class="color" value="5bef4b" id="co2">
+</li>
+<li class="col-lg-9"><div contenteditable="true">D367C3</div><div contenteditable="true">5bef4b</div></li>
+</ul>
+<ul class="row connected" id="1">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="2b542c">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="3c763d">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="c1e2b3">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="dff0d8">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="5cb85c">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="811ba7">3</li>
+</ul>
+<ul class="row connected" id="2">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="24f269">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="56f7a9">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="2b542c">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="c1e2b3">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="3c763d">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="dff0d8">6</li>
+</ul>
+<ul class="row connected" id="3">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="afd9ee">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="d9edf7">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="31708f">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="3071a9">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="2452c9">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="b39804">5</li>
+</ul>
+<ul class="row connected" id="4">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="d9edf7">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="afd9ee">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="5bc0de">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="46b8da">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="428bca">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="357ebd">2</li>
+</ul>
+<ul class="row connected" id="5">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="8a6d3b">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="84353a">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="a94442">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="a45269">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="c2364B">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="00a7a7">2</li>
+</ul>
+<ul class="row connected" id="6">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="8a6d3b">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="f7ecb5">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="66512c">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="56f7a9">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="f0ad4e">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="eea236">4</li>
+</ul>
+<ul class="row connected" id="7">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="2452c9">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="31708f">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="3071a9">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="357ebd">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="d367c3">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="b39804">5</li>
+</ul>
+<ul class="row connected" id="8">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="fcf8e3">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="f7ecb5">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="66512c">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="f2dede">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="e4b9b9">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="fcf8e3">2</li>
+</ul>
+<ul class="row connected" id="9">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="84353a">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="f2dede">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="e4b9b9">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="a45269">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="00a7a7">2</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="24b8ac">5</li>
+</ul>
+<ul class="row connected" id="10">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="d9534f">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="c2364B">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="c6422f">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="a94442">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="5bc0de">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="46b8da">6</li>
+</ul>
+<ul class="row connected" id="11">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="5cb85c">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="d367c3">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="f0ad4e">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="33cc33">1</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="811ba7">3</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="24f269">3</li>
+</ul>
+<ul class="row connected" id="12">
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="24b8ac">5</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="d9534f">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="c6422f">6</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="eea236">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3" data-color="428bca">4</li>
+<li class="col-lg-2 col-xs-4 col-md-2 col-sm-3 color-2-bg" data-color="33cc33">1</li>
+</ul>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/auto-color-set.min.js"></script>
+<script>
+mycolorset(".col-lg-2");
+$(".color").change(function() {
+var v= $(this).val();
+$(this).parent("li").next("li").data("color", v);
+$(this).each(function() {
+mycolorset(".col-lg-9");
+});
+$(this).promise().done(function() {
+var id = $(this).attr("id");
+var bg = $(".col-lg-9").data("bg");
+var color = $(".col-lg-9").data("color");
+var bg0 = '#'+bg;
+var color0 = '#'+color;
+if(id == 'co') {
+$("#co2").val(color).css('background-color', color0);
+}
+else {
+$("#co").val(bg).css('background-color', bg0);
+}
+});
+
+});
+$("#co2").focusin(function() {
+$(this).parent("li").next("li").addClass("color-2-bg");
+});
+$("#co").focusin(function() {
+$(this).parent("li").next("li").removeClass("color-2-bg");
+});
+</script>
+</body>
+
+</html>
